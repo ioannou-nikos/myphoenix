@@ -3,9 +3,9 @@ defmodule RumblWeb.VideoControllerTest do
 
   alias Rumbl.Multimedia
 
-  @create_attrs %{" url": "some  url", description: "some description", title: "some title"}
-  @update_attrs %{" url": "some updated  url", description: "some updated description", title: "some updated title"}
-  @invalid_attrs %{" url": nil, description: nil, title: nil}
+  @create_attrs %{url: "some  url", description: "some description", title: "some title"}
+  @update_attrs %{url: "some updated  url", description: "some updated description", title: "some updated title"}
+  @invalid_attrs %{url: nil, description: nil, title: nil}
 
   def fixture(:video) do
     {:ok, video} = Multimedia.create_video(@create_attrs)
